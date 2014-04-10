@@ -23,5 +23,5 @@ RUN chmod 755 /*.sh
 RUN git clone https://github.com/fermayo/hello-world-lamp.git /app
 RUN mkdir -p /app && rm -fr /var/www && ln -s /app /var/www
 
-EXPOSE 80 3306
+EXPOSE 80
 CMD ["/run.sh"]
